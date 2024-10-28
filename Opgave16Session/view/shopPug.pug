@@ -1,0 +1,24 @@
+head
+  title My Site
+  script(src='/Funktionalitet.js')
+ 
+body
+    table
+    div
+        table(border='1')
+            each produkt in produkter
+                tr
+                    td= produkt.produkt
+                    td= produkt.pris 
+                    td: button(onclick='clickfunction(\'' + produkt.produkt + '\','+ produkt.pris +')') Tilføj produkt
+    p 
+        |Tilføjet produkter:
+    div
+        ul
+            each p in indkøb
+                li= p.navn + " " + p.pris
+
+    
+        
+
+

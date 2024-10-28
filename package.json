@@ -1,0 +1,12 @@
+{
+  "type":"module",
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "firebase": "^10.11.0",
+    "firestore": "^1.1.6",
+    "firstore": "^1.0.5",
+    "node-fetch": "^3.3.2",
+    "pug": "^3.0.2"
+  }
+}

@@ -1,0 +1,15 @@
+body
+   if results != undefined
+      h3 Her er en liste over Bruger på systemet
+      table(border='1')
+         tr
+             th navn
+             th nationalitet
+          
+         -
+         each user in results
+             tr
+                 td #{user.name.title + " " + user.name.first + " " + user.name.last}
+                 td #{user.nat}
+   else 
+      h3 Fejl              

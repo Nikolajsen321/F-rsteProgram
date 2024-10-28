@@ -1,0 +1,21 @@
+html
+  head
+    title My Site
+    script(src='/index.js')
+  body
+    div
+      table(border='1')
+        tr
+          td: label(for='navn') Navn
+          td: input(type='text' id='navn' name='navn')
+          td: label(for='TelefonNummer') TelefonNummer
+          td: input(type='text' id='TelefonNummer' name='TelefonNummer')
+          td: button(onclick='addPerson()') Add
+    p 
+      | PersonListe:
+    div
+      ul
+        each p in personliste
+          li
+            | Navn: #{p.navn}  
+            a(href='#' onclick=`editNumber("${p.navn}")`) #{p.telefonNummer}

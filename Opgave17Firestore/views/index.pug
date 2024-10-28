@@ -1,0 +1,29 @@
+html
+  head 
+    title 👨‍🏫 Beskeder
+  script.
+    async function deletE(url, id) {
+        const respons = await fetch(url + '/' + id, {
+            method: "DELETE",
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+        if (respons.status !== 201) // Deleted
+            throw new Error(respons.status);
+        return await respons.text();
+    }
+
+    let deletefunction = async (id) => {
+            try {
+                await deletE("/deleteCar", id);
+                window.location.href='/cars';
+            } catch (e) {
+                console.log("Fejl");
+            }
+        }
+  body 
+    ul 
+      each besked in beskeder
+        li= besked.besked
+         

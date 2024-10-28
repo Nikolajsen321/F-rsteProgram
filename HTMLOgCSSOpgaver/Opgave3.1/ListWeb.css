@@ -1,0 +1,16 @@
+#serf{
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+#default {
+	text-decoration: underline;
+
+}
+
+
+#container {
+    border: 1px solid red;
+    width: 20%;
+    padding: 10px;
+}

@@ -1,0 +1,25 @@
+head
+  title My Site
+  script(src='/index.js')
+ 
+body
+    div
+        table(border='1')
+                tr
+                    td: label(for=navn) Navn
+                    td: input(type='text' id='navn' name='navn')
+                    td: label(for=adresse) Adresse
+                    td: input(type='text' id='adresse' name='adresse')
+                    td: button(onclick='addPerson()') Add
+
+    p 
+        |Tilføjet produkter:
+    div
+        ul
+            each p in personliste
+                li= "Navn: " + p.navn + " Adresse: " + p.pris
+
+    
+        
+
+

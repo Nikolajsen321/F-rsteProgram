@@ -1,0 +1,54 @@
+td {
+	border: 1px solid blue;	
+}
+
+#knapContainer{
+    border: 1px solid red; 
+    width: 50%;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: whitesmoke; 
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+   
+
+    
+}
+
+#beskedContainer {
+     border: 1px solid red; 
+    width: 50%;
+    margin: 30px auto;
+    padding: 10px;
+     background-color: whitesmoke;
+     
+     height: 200px; /* Ændre størrelsen efter dine præferencer */
+    overflow: auto; /* Gør containeren scrollbar, hvis indholdet er større end dens størrelse */
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+
+     grid-auto-flow: row; 
+}
+
+
+#Opretcontainer{
+    border: 1px solid red; 
+    width: 50%;
+    margin: 30px auto;
+    padding: 10px;
+     background-color: whitesmoke;
+     
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+
+     grid-auto-flow: row; 
+
+}
+
