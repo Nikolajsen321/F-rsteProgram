@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: true }));
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDARA2qM52hZu4DjlcAtX3JuX6GzNQ2S1k",
+  apiKey: 1,
   authDomain: "cars-9e55e.firebaseapp.com",
   projectId: "cars-9e55e",
   storageBucket: "cars-9e55e.appspot.com",
